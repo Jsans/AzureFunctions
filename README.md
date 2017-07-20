@@ -1,6 +1,6 @@
 # AzureFunctions
 
-## this is a script I made te setup a azurefunction for presenting analytics results
+## this is a script to setup an Azure function for presenting analytics results
 
 ### install
 open KUDU
