@@ -1,6 +1,6 @@
 # AzureFunctions
 
-## this is a script to setup an Azure function for presenting analytics results
+## this is a script to setup an Azure function with python 3.6 and do pip installs
 
 ### install
 open KUDU
@@ -11,7 +11,7 @@ nuget.exe install -Source https://www.siteextensions.net/api/v2/ -OutputDirector
 
 mv /d/home/site/tools/python361x64.3.6.1.3/content/python361x64/* /d/home/site/tools/
 
-D:\home\site\tools\python.exe -m pip install D:\home\site\wwwroot\requirements.txt
+D:\home\site\tools\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 ```
 
 
