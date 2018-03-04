@@ -1,7 +1,7 @@
 pandas
 requests
 jinja2
-pil
+pillow
 azure-storage-blob
 azure-storage-file
 azure-storage-queue
