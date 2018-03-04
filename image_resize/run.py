@@ -44,7 +44,7 @@ if request_fn['size']!=None:
     size= int(request_fn['size'][0])
     try:
         
-        d=block_blob_service.get_blob_to_bytes('order',"%s_" % str(size) +img_file)
+        d=block_blob_service.get_blob_to_bytes('master',"%s_" % str(size) +img_file)
         print('in blob')
         stream = io.BytesIO(d.content)
         img = Image.open(stream)
@@ -52,7 +52,7 @@ if request_fn['size']!=None:
         img.save(out,format="png")
         data_uri=base64.b64encode(out.getvalue())
     except:
-        print('not in order blob')
+        print('not in master blob')
         d=block_blob_service.get_blob_to_bytes('incontainer',img_file)
         stream = io.BytesIO(d.content)
         basewidth = size
@@ -62,7 +62,7 @@ if request_fn['size']!=None:
         img = img.resize((basewidth, hsize), Image.ANTIALIAS)
         out= io.BytesIO()
         img.save(out,format="png")
-        block_blob_service.create_blob_from_bytes('order',"%s_" % str(size) +img_file,out.getvalue())
+        block_blob_service.create_blob_from_bytes('master',"%s_" % str(size) +img_file,out.getvalue())
         data_uri=base64.b64encode(out.getvalue())
 
 if request_fn['size']==None:

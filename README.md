@@ -13,7 +13,7 @@ I also added some basic example's I used for sample weekend projects ^__^
 ```shell
 nuget.exe install -Source https://www.siteextensions.net/api/v2/ -OutputDirectory D:\home\site\tools python361x64  
 
-mv /d/home/site/tools/python361x64.3.6.1.3/content/python361x64/* /d/home/site/tools/
+mv ./site/tools/python361x64.3.6.1.3/content/python361x64/* ./site/tools/
 
 D:\home\site\tools\python.exe -m pip install --upgrade -r D:\home\site\wwwroot\requirements.txt
 
