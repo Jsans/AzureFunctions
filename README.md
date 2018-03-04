@@ -1,8 +1,7 @@
 # AzureFunctions
 
 ## this is a script to setup an Azure function with python 3.6 and do pip installs
-I also added some basic example's I used for sample projects 
-
+I also added some basic example's I used for sample weekend projects ^__^
 
 
 #### install
@@ -28,6 +27,8 @@ Add to App settings : Key=YOURAPPSETTING Value=something
 
 #### Good reads and for inspirations: 
 https://github.com/yokawasa/azure-functions-python-samples
+https://github.com/nmyster/python-alexa
+
 
 #### Sources:
 https://prmadi.com/running-python-code-on-azure-functions-app/

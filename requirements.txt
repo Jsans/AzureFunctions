@@ -1,4 +1,7 @@
 pandas
 requests
-azure
 jinja2
+pil
+azure-storage-blob
+azure-storage-file
+azure-storage-queue
