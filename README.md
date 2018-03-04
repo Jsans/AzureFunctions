@@ -26,6 +26,9 @@ D:\home\site\tools\python.exe -m pip install --upgrade -r D:\home\site\wwwroot\r
 Go to Application settings from Azure Function dashboard 
 Add to App settings : Key=YOURAPPSETTING Value=something
 
+#### Good reads and for inspirations: 
+https://github.com/yokawasa/azure-functions-python-samples
+
 #### Sources:
 https://prmadi.com/running-python-code-on-azure-functions-app/
 https://social.msdn.microsoft.com/Forums/azure/en-US/2a9c52a1-391c-4609-b133-ee56c2ad4b7e/access-app-settings-from-azure-function-with-python?forum=AzureFunctions
